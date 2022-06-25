@@ -1,0 +1,9 @@
+# thirdy parties
+node_modules
+
+# build files 
+dist
+build 
+
+# tests
+coverage
