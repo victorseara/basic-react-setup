@@ -1,12 +1,18 @@
 {
-  "name": "basic-react",
+  "name": "basic-react-setup",
   "version": "1.0.0",
   "main": "index.js",
   "author": "victorseara",
+  "homepage": "https://victorseara.github.io/basic-react-setup",
+  "repository": {
+    "url": "https://github.com/victorseara/basic-react-setup"
+  },
   "license": "MIT",
   "scripts": {
     "start": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -19,6 +25,7 @@
     "@babel/preset-react": "^7.17.12",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.73.0",
