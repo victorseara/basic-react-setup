@@ -24,7 +24,7 @@ jobs:
         run: yarn build
 
       - name: Copy coverage report
-        run: cp -r ./coverage ./dist
+        run: cp -r ./coverage/lcov-report ./dist/coverage
 
       - name: Push to GitHub Pages branch
         uses: ftnext/action-push-ghpages@v1.0.0
