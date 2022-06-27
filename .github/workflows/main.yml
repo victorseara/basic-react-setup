@@ -30,7 +30,7 @@ jobs:
         run: cp -r ./coverage/lcov-report ./dist/coverage
 
       - name: Copy mutation report
-        run: cp -r ./reports/mutation ./dist/mutation
+        run: cp -r ./mutation ./dist/mutation
 
       - name: Push to GitHub Pages branch
         uses: ftnext/action-push-ghpages@v1.0.0

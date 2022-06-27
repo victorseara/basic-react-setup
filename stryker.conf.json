@@ -5,5 +5,8 @@
   "tempDirName": ".mutations",
   "reporters": ["html", "clear-text", "progress", "dashboard"],
   "testRunner": "jest",
-  "coverageAnalysis": "perTest"
+  "coverageAnalysis": "perTest",
+  "htmlReporter": {
+    "fileName": "mutation/index.html"
+  }
 }

@@ -10,5 +10,4 @@ coverage
 
 # stryker temp files
 .stryker-tmp
-.mutations
-reports
+mutation
