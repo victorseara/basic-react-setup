@@ -20,11 +20,17 @@ jobs:
       - name: Run tests
         run: yarn test
 
+      - name: Run tests
+        run: yarn test:mutation
+
       - name: Run build
         run: yarn build
 
       - name: Copy coverage report
         run: cp -r ./coverage/lcov-report ./dist/coverage
+
+      - name: Copy mutations report
+        run: cp -r ./reports/mutation ./dist/mutation
 
       - name: Push to GitHub Pages branch
         uses: ftnext/action-push-ghpages@v1.0.0

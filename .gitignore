@@ -7,3 +7,8 @@ build
 
 # tests
 coverage
+
+# stryker temp files
+.stryker-tmp
+.mutations
+reports
