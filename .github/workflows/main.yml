@@ -22,5 +22,12 @@ jobs:
         
       - name: Run build
         run: yarn build
+        
+      - name: Push to GitHub Pages branch
+        uses: ftnext/action-push-ghpages@v1.0.0
+        with:
+          build_dir: "./dist"
+          github_token: "${{ secrets.PAT }}"
+
 
  
