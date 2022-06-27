@@ -20,7 +20,7 @@ jobs:
       - name: Run tests
         run: yarn test
 
-      - name: Run tests
+      - name: Run mutation
         run: yarn test:mutation
 
       - name: Run build
