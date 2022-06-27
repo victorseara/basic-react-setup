@@ -29,7 +29,7 @@ jobs:
       - name: Copy coverage report
         run: cp -r ./coverage/lcov-report ./dist/coverage
 
-      - name: Copy mutations report
+      - name: Copy mutation report
         run: cp -r ./reports/mutation ./dist/mutation
 
       - name: Push to GitHub Pages branch
