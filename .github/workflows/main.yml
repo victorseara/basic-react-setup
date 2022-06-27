@@ -1,33 +1,33 @@
 name: CI
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
 jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.3.0
 
       - name: Install dependencies
         run: yarn
-        
+
       - name: Run tests
         run: yarn test
-        
+
       - name: Run build
         run: yarn build
-        
+
+      - name: Copy coverage report
+        run: cp -r ./coverage ./dist
+
       - name: Push to GitHub Pages branch
         uses: ftnext/action-push-ghpages@v1.0.0
         with:
           build_dir: "./dist"
           github_token: "${{ secrets.PAT }}"
-
-
- 
