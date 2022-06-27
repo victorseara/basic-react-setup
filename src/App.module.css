@@ -1,3 +1,13 @@
 .app {
-  background-color: red;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app main {
+  text-align: center;
 }
