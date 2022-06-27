@@ -8,5 +8,6 @@
   "coverageAnalysis": "perTest",
   "htmlReporter": {
     "fileName": "mutation/index.html"
-  }
+  },
+  "ignorePatterns": ["src/index.jsx"]
 }
